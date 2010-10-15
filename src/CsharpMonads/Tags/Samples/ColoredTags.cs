@@ -15,7 +15,7 @@
             var rolled = redTree.Roll();
             Console.WriteLine(rolled);
 
-            var uppper = redTree.Bind(x=>x.ToUpper());
+            var uppper = rolled.Bind(x => Red.New(x.ToUpper()));
             Console.WriteLine(uppper);
 
             var blueTree = Blue.Append(Blue.New("blabla"), Blue.New("blubblub"));
